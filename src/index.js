@@ -16,7 +16,7 @@ const store = createStore(reducer);
 function App() {
   return (
     <div className="App">
-      <Title />
+      <Title otherOutsideProp="warren"/>
       <DragonList />
     </div>
   );
