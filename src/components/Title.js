@@ -9,8 +9,7 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  // const [state, dispatch] = useReducer(titleReducer, initialState);
-
+  console.log(props);
   const handleToggleEditing = () => {
     // dispatch(toggleEditing());
   }
@@ -38,7 +37,9 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(Title);
+// export default connect(mapStateToProps)(Title);
+export default Title;
+
 //mapStateToProps : function that gets the current state and injects into props anything that is returned.
 //mapActionToProps : object that contains action creators. These functions are injected into props. They are AUTOMATICALLY DISPATCHED, when executed.
 //component : the component we are injecting props into.
