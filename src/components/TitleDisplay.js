@@ -23,8 +23,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapActionToProps = {
-  toggleEditing: toggleEditing
-}
-
-export default connect(mapStateToProps, mapActionToProps)(TitleDisplay);
+export default connect(mapStateToProps, { toggleEditing: toggleEditing })(TitleDisplay);
