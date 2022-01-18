@@ -31,6 +31,7 @@ const Title = () => {
   );
 };
 
-export default connect(mapStateToProps, mapActionToProps)(Title);
+export default connect(mapStateToProps)(Title);
 //mapStateToProps : function that gets the current state and injects into props anything that is returned.
 //mapActionToProps : object that contains action creators. These functions are injected into props. They are AUTOMATICALLY DISPATCHED, when executed.
+//component : the component we are injecting props into.
