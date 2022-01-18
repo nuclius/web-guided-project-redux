@@ -1,3 +1,5 @@
+import {ADD_MEMBER} from './../actions/dragonActions';
+
 const initialState = {
     members: [
         { name: 'Jojo Zhang', dragonStatus: true },
@@ -7,7 +9,7 @@ const initialState = {
 
 const reducer = (state = initialState, action ) => {
     switch(action.type) {
-        case("ADD_MEMBER"):          
+        case ADD_MEMBER:
             return {
                 ...state,
                 members: [...this.members, {name: action.payload, dragonStatus: true}]
