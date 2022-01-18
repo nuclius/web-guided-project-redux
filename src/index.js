@@ -17,7 +17,7 @@ console.log(store.getState());
 function App() {
   return (
     <div className="App">
-      <Title />
+      {/* <Title /> */}
       <DragonList />
     </div>
   );
