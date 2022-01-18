@@ -18,6 +18,7 @@ const Title = (props) => {
     // dispatch(updateTitle(title));
   }
 
+  console.log("0/5. Renders new state.");
   return (
     <div>
       <h1>{props.appName}</h1>
