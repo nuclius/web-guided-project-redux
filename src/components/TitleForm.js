@@ -29,4 +29,8 @@ const TitleForm = (props) => {
         </div>);
 }
 
-export default connect()(TitleForm);
+const mapActionsToProps = {
+  updateTitle: updateTitle
+}
+
+export default connect(null, mapActionsToProps)(TitleForm);
