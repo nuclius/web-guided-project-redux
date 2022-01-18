@@ -10,6 +10,7 @@ import TitleForm from './TitleForm';
 
 const Title = (props) => {
   const handleToggleEditing = () => {
+    console.log("1. Capture the click");
     props.dispatch(toggleEditing());
   }
 
