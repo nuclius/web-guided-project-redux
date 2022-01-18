@@ -32,11 +32,9 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
-  
   return {
     appName: state.appName,
-    editing: state.editing,
-    title: state.title,
+    editing: state.editing
   }
 }
 
