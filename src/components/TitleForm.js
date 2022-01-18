@@ -19,7 +19,7 @@ const TitleForm = (props) => {
             className="title-input"
             type="text"
             name="newTitleText"
-            value={newTitleText}
+            value={ newTitleText }
             onChange={handleChanges}
           />
           <button
