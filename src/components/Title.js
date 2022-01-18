@@ -31,4 +31,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default connect(mapStateProps, mapActionToProps)(Title);
