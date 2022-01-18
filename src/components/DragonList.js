@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
 import DragonMember from './DragonMember';
 
 class DragonList extends React.Component {
@@ -41,4 +43,4 @@ class DragonList extends React.Component {
   }
 }
 
-export default DragonList;
+export default connect()(DragonList);
