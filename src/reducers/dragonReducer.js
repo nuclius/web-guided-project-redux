@@ -8,7 +8,14 @@ const initialState = {
 const reducer = (state = initialState, action ) => {
     switch(action.type) {
         case("ADD_MEMBER"):
-            return state;
+        this.setState({
+            ...this.state,
+            members: [...this.members, {name: newMember, dragonStatus: true}]
+          });
+            return {
+                ...state,
+                members: 
+            }
         default:
             return state;
     }
