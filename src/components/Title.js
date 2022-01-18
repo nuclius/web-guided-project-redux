@@ -9,8 +9,6 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  console.log(props);
-
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
@@ -33,7 +31,7 @@ const Title = (props) => {
   );
 };
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
   return {
     prop1: 1,
     prop2: 2,
