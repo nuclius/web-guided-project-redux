@@ -15,14 +15,12 @@ const store = createStore(reducer);
 
 function App() {
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Title />
-        <DragonList />
-      </div>
-    </Provider>
+    <div className="App">
+      <Title />
+      <DragonList />
+    </div>
   );
 }
 
 const rootElement = document.getElementById('root');
-ReactDOM.render(<App />, rootElement);
+ReactDOM.render(<Provider store={store}><App /></Provider>, rootElement);
