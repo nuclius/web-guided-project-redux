@@ -32,6 +32,7 @@ const Title = (props) => {
 };
 
 const mapStateToProps = (state) => {
+  console.log(state);
   return {
     prop1: 1,
     prop2: 2,
