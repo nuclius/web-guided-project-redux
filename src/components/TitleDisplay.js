@@ -15,4 +15,10 @@ const TitleDisplay = (props)=> {
   </h2>);
 }
 
+const mapStateToProps = (state) => {
+  return {
+    title: state.title
+  }
+}
+
 export default connect(mapStateToProps)(TitleDisplay);
