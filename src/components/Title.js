@@ -15,7 +15,7 @@ const Title = (props) => {
   }
 
   const handleTitleUpdate = (title) => {
-    // dispatch(updateTitle(title));
+    props.dispatch(updateTitle(title));
   }
 
   console.log("0/5. Renders new state.");
