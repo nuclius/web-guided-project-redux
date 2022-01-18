@@ -30,4 +30,4 @@ const TitleForm = (props) => {
 }
 
 
-export default connect(null, { updateTitle})(TitleForm);
+export default connect(null, { updateTitle })(TitleForm);
