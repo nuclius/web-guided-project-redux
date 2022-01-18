@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
 
 const TitleForm = (props) => {
+    console.log(props);
+    
     const [newTitleText, setNewTitleText] = useState();
 
     const handleChanges = e => {
@@ -26,4 +29,4 @@ const TitleForm = (props) => {
         </div>);
 }
 
-export default TitleForm;
+export default connect()(TitleForm);
