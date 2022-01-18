@@ -9,24 +9,22 @@ import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
 const Title = (props) => {
-  console.log(props);
-  
-  const [state, dispatch] = useReducer(titleReducer, initialState);
+  // const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
-    dispatch(toggleEditing());
+    // dispatch(toggleEditing());
   }
 
   const handleTitleUpdate = (title) => {
-    dispatch(updateTitle(title));
+    // dispatch(updateTitle(title));
   }
 
   return (
     <div>
-      <h1>{state.appName}</h1>
+      <h1>{props.appName}</h1>
       {
-        !state.editing ? 
-          <TitleDisplay title={state.title} handleToggleEditing={handleToggleEditing}/>: 
+        !props.editing ? 
+          <TitleDisplay title={[props.title} handleToggleEditing={handleToggleEditing}/>: 
           <TitleForm handleTitleUpdate={handleTitleUpdate}/>
       }
     </div>
