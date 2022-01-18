@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addMember} from './../actions/dragonActions';
+import { addMember } from './../actions/dragonActions';
 
 import DragonMember from './DragonMember';
 
@@ -14,7 +14,7 @@ class DragonList extends React.Component {
   };
 
   handleClick = ()=> {
-    this.props.dispatch();
+    this.props.dispatch(addMember(this.state.newMember));
   }
 
   render() {
