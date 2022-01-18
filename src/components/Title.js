@@ -8,7 +8,9 @@ import { toggleEditing, updateTitle} from './../actions/titleActions';
 import TitleDisplay from './TitleDisplay';
 import TitleForm from './TitleForm';
 
-const Title = () => {
+const Title = (props) => {
+  console.log(props);
+  
   const [state, dispatch] = useReducer(titleReducer, initialState);
 
   const handleToggleEditing = () => {
