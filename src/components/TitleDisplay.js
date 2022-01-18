@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 const TitleDisplay = (props)=> {
   const handleClick = () => {
@@ -14,4 +15,4 @@ const TitleDisplay = (props)=> {
   </h2>);
 }
 
-export default TitleDisplay;
+export default connect(mapStateToProps)(TitleDisplay);
