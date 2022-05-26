@@ -2,7 +2,7 @@ import { UPDATE_TITLE, TOGGLE_EDITING} from './../actions/titleActions';
 
 export const initialState = {
     appName: "Redux Test",
-    title: "Pace's Dragon Member List 🐲",
+    title: "Dragon Member List 🐲",
     editing: false
   };
 
